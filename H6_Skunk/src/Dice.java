@@ -104,4 +104,13 @@ public class Dice
 		StdOut.println("Expected count: " + (NUM_TRIALS / 36.0));
 	}
 
+	public boolean isDoubleSkunk() {		
+		return getDie1().getLastRoll() == 1 && getDie2().getLastRoll() == 1;
+	}
+
+	public boolean isOneSkunk() {
+		// TODO Auto-generated method stub
+		return getDie1().getLastRoll() == 1 || getDie2().getLastRoll() == 1;
+	}
+
 }
